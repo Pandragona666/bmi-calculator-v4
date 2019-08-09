@@ -23,22 +23,22 @@ class Result extends React.Component {
     render() {
 
         return (
-        <div>
+        <div align="center">
             <br/>
             <table className="table table-bordered table-striped">
-                <thead>
-                    <tr>
-                        <th>BMI</th>
-                        <th>Result</th>
-                    </tr>
-                </thead>
                 <tbody>
+					<tr>
+                        <td width="100 pixels">BMI</td>
+						<td width="100 pixels">{Number(this.props.bmi).toFixed(2)}</td>
+                        
+                    </tr>
                     <tr>    
-                        <td>{Number(this.props.bmi).toFixed(2)}</td>
-                        <td>{this.showStats(this.props.result)}</td>
+                        <td>Result</td>
+                        <td>{this.showStats(this.props.result)}*</td>
                     </tr>
                 </tbody>
             </table>
+			<p>*The Body Mass Index is a popular formula and straightforward to apply, but it is not always an accurate indicator of a person’s fat to body mass ratio.</p>
         </div>
         )
     }

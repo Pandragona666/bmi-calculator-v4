@@ -17,7 +17,6 @@ class BmiCalculator extends React.Component {
                     <h2>{this.props.title}</h2>
 					<h4>A measure of body fat in adults</h4>
                     <Form/>
-					<p>*The Body Mass Index is a popular formula and straightforward to apply, but it is not always an accurate indicator of a person’s fat to body mass ratio.</p>
                 </div>
             </div>
         )
